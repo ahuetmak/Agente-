@@ -1,1 +1,37 @@
-
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Agente Invisible API",
+    "version": "1.0.0",
+    "description": "API backend sin interfaz para agentes de IA"
+  },
+  "paths": {
+    "/v1/run": {
+      "post": {
+        "summary": "Ejecuta el agente invisible",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Respuesta exitosa",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
